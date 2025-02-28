@@ -1,8 +1,8 @@
 {
   "name": "@abhaytelerapp/bluelight",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
-  "main": "html/start.html",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
