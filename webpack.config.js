@@ -9,7 +9,7 @@ export default {
         "path": require.resolve("path-browserify"),
         "stream": require.resolve("stream-browserify"),
         "querystring": require.resolve("querystring-es3"),
-        "http": require.resolve("http"),
+        "http": require.resolve("stream-http"),
         "https": require.resolve("https-browserify"),
         "url": require.resolve("url/"),
         "buffer": require.resolve("buffer/"),
