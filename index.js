@@ -12,12 +12,11 @@ app.use(express.static('public')); // Serve static files from 'public' folder
 //   res.sendFile(path.join(__dirname, 'public/html/start.html'));
 // });
 
-function BluelightViewer() {
-  console.log("Bluelight Viewer Initialized");
-}
+// function BluelightViewer() {
+//   console.log("Bluelight Viewer Initialized");
+// }
+// module.exports = BluelightViewer;
 
 server.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
-
-module.exports = BluelightViewer;
