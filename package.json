@@ -24,8 +24,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "browserify-zlib": "^0.2.0",
+    "crypto-browserify": "^3.12.1",
     "express": "^4.21.2",
     "nodemon": "^3.1.9",
+    "path-browserify": "^1.0.1",
+    "querystring-es3": "^0.2.1",
+    "stream-browserify": "^3.0.0",
     "stream-http": "^3.2.0"
   }
 }
