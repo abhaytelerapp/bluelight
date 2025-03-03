@@ -1,4 +1,6 @@
-module.exports = {
+import webpack from "web"
+
+export default {
     target: "node",  // Keep this if it's for Node.js
     resolve: {
       fallback: {
