@@ -1,5 +1,5 @@
 import express from 'express';
-import path from 'path-browserify';
+import path from 'path';
 import { fileURLToPath } from "url";
 import http from "http";
 
