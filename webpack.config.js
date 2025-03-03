@@ -1,14 +1,15 @@
 module.exports = {
   resolve: {
     fallback: {
-      "path": "path-browserify",
+      "path": require.resolve("path-browserify"),
       "http": require.resolve("stream-http"),
+      "https": require.resolve("https-browserify"),
       "crypto": require.resolve("crypto-browserify"),
+      "fs": false, // No browser equivalent for fs
+      "stream": require.resolve("stream-browserify"),
       "zlib": require.resolve("browserify-zlib"),
       "querystring": require.resolve("querystring-es3"),
-      "stream": require.resolve("stream-browserify"),
-      "fs": false, // fs is not available in the browser
-      "net": false, // net is not available in the browser
+      "net": false, // No browser equivalent for net
     }
   }
 };
