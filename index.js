@@ -17,6 +17,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/html/start.html'));
 });
 
+export default function BluelightViewer() {
+  console.log("Bluelight Viewer Initialized");
+}
+
 server.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
