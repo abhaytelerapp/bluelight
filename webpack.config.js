@@ -6,7 +6,7 @@ module.exports = {
       fallback: {
         "zlib": require.resolve("browserify-zlib"),
         "crypto": require.resolve("crypto-browserify"),
-        "path": require.resolve("path-browserify"),
+        "path": false,
         "stream": require.resolve("stream-browserify"),
         "querystring": require.resolve("querystring-es3"),
         "http": require.resolve("stream-http"),
