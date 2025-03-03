@@ -842,7 +842,7 @@ function openModal() {
   const documentList = document.getElementById("documentList");
   documentList.innerHTML = ""; // Clear previous entries
 
-  attachment.forEach((file, index) => {
+  attachment?.forEach((file, index) => {
     const row = document.createElement("tr");
 
     // Document Name

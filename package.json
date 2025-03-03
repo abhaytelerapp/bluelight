@@ -2,14 +2,20 @@
   "name": "@abhaytelerapp/bluelight",
   "version": "1.0.4",
   "description": "",
-  "main": "html/start.html",
+  "type": "module",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "repository": {
     "url": "https://github.com/abhaytelerapp/bluelight.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
 }
