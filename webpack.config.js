@@ -1,6 +1,6 @@
-import webpack from "web"
+const webpack = require("web")
 
-export default {
+module.exports = {
     target: "node",  // Keep this if it's for Node.js
     resolve: {
       fallback: {
