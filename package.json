@@ -1,9 +1,14 @@
 {
   "name": "@abhaytelerapp/bluelight",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "type": "module",
   "main": "index.js",
+  "module": "index.js",
+  "exports": {
+    "import": "./index.js",
+    "require": "./index.cjs"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
@@ -11,7 +16,7 @@
   "repository": {
     "url": "https://github.com/abhaytelerapp/bluelight.git"
   },
-  "keywords": [],
+  "keywords": ["bluelight", "viewer", "dicom"],
   "author": "",
   "license": "ISC",
   "dependencies": {
