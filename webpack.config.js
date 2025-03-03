@@ -31,7 +31,7 @@ export default {
   resolve: {
     extensions: ['.js'],
     fallback: {
-        http: false, // Prevent Webpack from trying to polyfill 'http'
+        http: require.resolve('stream-http'), // Provide polyfill for 'http'
       },
   },
   mode: 'development', // Change to 'production' for optimization

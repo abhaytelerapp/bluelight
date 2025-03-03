@@ -16,11 +16,16 @@
   "repository": {
     "url": "https://github.com/abhaytelerapp/bluelight.git"
   },
-  "keywords": ["bluelight", "viewer", "dicom"],
+  "keywords": [
+    "bluelight",
+    "viewer",
+    "dicom"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.2",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "stream-http": "^3.2.0"
   }
 }
