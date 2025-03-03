@@ -17,6 +17,9 @@ export default {
         "fs": false,  // Node.js modules that can't be polyfilled
         "net": false, 
         "tls": false,
+      },
+      alias: {
+        url: false
       }
     },
     plugins: [
