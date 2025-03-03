@@ -1,7 +1,7 @@
 module.exports = {
   resolve: {
     fallback: {
-      "path": require.resolve("path-browserify"),
+      "path": "path-browserify",
       "http": require.resolve("stream-http"),
       "crypto": require.resolve("crypto-browserify"),
       "zlib": require.resolve("browserify-zlib"),

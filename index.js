@@ -8,9 +8,9 @@ const PORT = 5000;
 
 app.use(express.static('public')); // Serve static files from 'public' folder
 
-// app.get('/', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'public/html/start.html'));
-// });
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/html/start.html'));
+});
 
 // function BluelightViewer() {
 //   console.log("Bluelight Viewer Initialized");
