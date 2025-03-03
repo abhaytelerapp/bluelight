@@ -30,6 +30,9 @@ export default {
   },
   resolve: {
     extensions: ['.js'],
+    fallback: {
+        http: false, // Prevent Webpack from trying to polyfill 'http'
+      },
   },
   mode: 'development', // Change to 'production' for optimization
 };
