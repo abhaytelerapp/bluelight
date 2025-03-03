@@ -1,31 +1,14 @@
-const webpack = require("webpack")
-
 module.exports = {
-    target: "node",  // Keep this if it's for Node.js
-    resolve: {
-      fallback: {
-        "zlib": require.resolve("browserify-zlib"),
-        "crypto": require.resolve("crypto-browserify"),
-        "path": false,
-        "stream": require.resolve("stream-browserify"),
-        "querystring": require.resolve("querystring-es3"),
-        "http": require.resolve("stream-http"),
-        "https": require.resolve("https-browserify"),
-        "url": require.resolve("url/"),
-        "buffer": require.resolve("buffer/"),
-        "util": require.resolve("util/"),
-        "fs": false,  // Node.js modules that can't be polyfilled
-        "net": false, 
-        "tls": false,
-      },
-      alias: {
-        url: false
-      }
-    },
-    plugins: [
-      new webpack.ProvidePlugin({
-        process: "process/browser",
-        Buffer: ["buffer", "Buffer"],
-      }),
-    ],
+  resolve: {
+    fallback: {
+      "path": require.resolve("path-browserify"),
+      "http": require.resolve("stream-http"),
+      "crypto": require.resolve("crypto-browserify"),
+      "zlib": require.resolve("browserify-zlib"),
+      "querystring": require.resolve("querystring-es3"),
+      "stream": require.resolve("stream-browserify"),
+      "fs": false, // fs is not available in the browser
+      "net": false, // net is not available in the browser
+    }
+  }
 };
