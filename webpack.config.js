@@ -1,4 +1,4 @@
-const webpack = require("web")
+const webpack = require("webpack")
 
 module.exports = {
     target: "node",  // Keep this if it's for Node.js
